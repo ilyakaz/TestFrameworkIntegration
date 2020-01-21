@@ -1,0 +1,5 @@
+module TestObjCModule {
+	header "../../TestObjCLibrary/TestObjCLibrary/TestObjCClass.h"
+	
+	export *
+}

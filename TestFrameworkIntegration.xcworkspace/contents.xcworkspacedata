@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:TestObjCLibrary/TestObjCLibrary.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestSwiftFramework/TestSwiftFramework.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TestSwiftFrameworkHarness/TestSwiftFrameworkHarness.xcodeproj">
+   </FileRef>
+</Workspace>
