@@ -91,6 +91,7 @@
 				096DE4A023D6057600D18426 /* Sources */,
 				096DE4A123D6057600D18426 /* Frameworks */,
 				096DE4A223D6057600D18426 /* Resources */,
+				096DE53023D748CB00D18426 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -143,6 +144,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		096DE53023D748CB00D18426 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# copy TestSwiftFramework.framework to the harness project\ncp -fR \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\" \"${SRCROOT}/../TestSwiftFrameworkHarness/TestSwiftFrameworkHarness\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		096DE4A023D6057600D18426 /* Sources */ = {
