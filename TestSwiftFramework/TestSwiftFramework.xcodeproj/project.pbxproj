@@ -165,7 +165,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# copy TestSwiftFramework.framework to the harness project\ncp -fR \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\" \"${SRCROOT}/../TestSwiftFrameworkHarness/TestSwiftFrameworkHarness\"\n";
+			shellScript = "FRAMEWORK_NAME=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\nFRAMEWORK_LOCATION=\"${SRCROOT}/../TestSwiftFrameworkHarness/TestSwiftFrameworkHarness\"\n\n#delete an existing framework at the target\nrm -df \"${FRAMEWORK_LOCATION}/${FRAMEWORK_NAME}\" \n# copy TestSwiftFramework.framework to the harness project\ncp -fR \"${FRAMEWORK_NAME}\" \"${FRAMEWORK_LOCATION}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
