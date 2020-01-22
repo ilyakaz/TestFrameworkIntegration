@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094F534023D7B62C004730CA /* TestObjCClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 094F533F23D7B62C004730CA /* TestObjCClass.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		096DE4A923D6057600D18426 /* TestSwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 096DE4A723D6057600D18426 /* TestSwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		096DE4E223D6094800D18426 /* TestSwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DE4E123D6094800D18426 /* TestSwiftObject.swift */; };
 		096DE51023D63D3500D18426 /* libTestObjCLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 096DE50F23D63D3500D18426 /* libTestObjCLibrary.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		094F533F23D7B62C004730CA /* TestObjCClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObjCClass.h; sourceTree = "<group>"; };
+		094F534123D7B743004730CA /* TestSwiftFramework.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = TestSwiftFramework.modulemap; sourceTree = "<group>"; };
 		096DE4A423D6057600D18426 /* TestSwiftFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestSwiftFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		096DE4A723D6057600D18426 /* TestSwiftFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSwiftFramework.h; sourceTree = "<group>"; };
 		096DE4A823D6057600D18426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		096DE4E123D6094800D18426 /* TestSwiftObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftObject.swift; sourceTree = "<group>"; };
-		096DE4E423D60DBB00D18426 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		096DE50F23D63D3500D18426 /* libTestObjCLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestObjCLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -53,10 +55,11 @@
 		096DE4A623D6057600D18426 /* TestSwiftFramework */ = {
 			isa = PBXGroup;
 			children = (
+				094F533F23D7B62C004730CA /* TestObjCClass.h */,
 				096DE4A723D6057600D18426 /* TestSwiftFramework.h */,
 				096DE4A823D6057600D18426 /* Info.plist */,
 				096DE4E123D6094800D18426 /* TestSwiftObject.swift */,
-				096DE4E423D60DBB00D18426 /* module.modulemap */,
+				094F534123D7B743004730CA /* TestSwiftFramework.modulemap */,
 			);
 			path = TestSwiftFramework;
 			sourceTree = "<group>";
@@ -77,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				096DE4A923D6057600D18426 /* TestSwiftFramework.h in Headers */,
+				094F534023D7B62C004730CA /* TestObjCClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,10 +319,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/$(SWIFT_MODULE_NAME)/$(PRODUCT_NAME:c99extidentifier).modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canfield.TestSwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/TestSwiftFramework";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -343,10 +349,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MODULEMAP_FILE = "$(SRCROOT)/$(SWIFT_MODULE_NAME)/$(PRODUCT_NAME:c99extidentifier).modulemap";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canfield.TestSwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/TestSwiftFramework";
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};

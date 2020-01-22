@@ -1,0 +1,12 @@
+framework module TestSwiftFramework {
+  umbrella header "TestSwiftFramework.h"
+
+  export *
+  module * { export * }
+
+  explicit module TestObjCModule_Private {
+	header "TestObjCClass.h"
+	link "TestObjCModule"
+	export *
+  }
+}
