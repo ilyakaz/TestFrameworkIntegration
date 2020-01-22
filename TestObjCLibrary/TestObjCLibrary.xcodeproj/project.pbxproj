@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094F533A23D7B27F004730CA /* libTestObjCLibrary.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 096DE4FF23D63C7400D18426 /* libTestObjCLibrary.a */; };
+		094F533B23D7B2A8004730CA /* TestObjCClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 096DE50B23D63D0900D18426 /* TestObjCClass.h */; };
 		096DE50D23D63D0900D18426 /* TestObjCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 096DE50C23D63D0900D18426 /* TestObjCClass.m */; };
 /* End PBXBuildFile section */
 
@@ -14,9 +16,11 @@
 		096DE4FD23D63C7400D18426 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
+			dstPath = "$(SRCROOT)/../TestSwiftFramework/TestSwiftFramework";
+			dstSubfolderSpec = 0;
 			files = (
+				094F533B23D7B2A8004730CA /* TestObjCClass.h in CopyFiles */,
+				094F533A23D7B27F004730CA /* libTestObjCLibrary.a in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
