@@ -3,9 +3,10 @@ framework module TestSwiftFramework {
 
   export *
   module * { export * }
-}
 
-module TestSwiftFramework.Swift {
-    header "TestSwiftFramework-Swift.h"
-    requires objc
+  explicit module TestObjCModule_Private {
+	header "TestObjCClass.h"
+
+	export *
+  }
 }

@@ -4,25 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/TestSwiftFramework-Swift.h</key>
-		<data>
-		bLHsjClXxoc5SkEXzI8KZhvTH+U=
-		</data>
 		<key>Headers/TestSwiftFramework.h</key>
 		<data>
 		6yO7yWvF15kASTSCQwq1QFN+gC8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9P9taTZSKXjtvCdHhq8Us0GCQbA=
-		</data>
-		<key>Modules/TestSwiftFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<data>
-		q2skvBebwICVb4POVPldN0I4osA=
-		</data>
-		<key>Modules/TestSwiftFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<data>
-		6P+28D/rlEtbPWaZJH0br+eaPIc=
+		4yPsiFznov36YVq+ZGJF7ulKieU=
 		</data>
 		<key>Modules/TestSwiftFramework.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -30,22 +18,19 @@
 		</data>
 		<key>Modules/TestSwiftFramework.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		6P+28D/rlEtbPWaZJH0br+eaPIc=
+		F0SwhWL+V5XglMJj0A6Zci622R4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		dmndAD0wU06ivKvWNg9XMo+xnuk=
+		QTL6rt9KCM2xbwLPHZeXfLMElMU=
+		</data>
+		<key>PrivateHeaders/TestObjCClass.h</key>
+		<data>
+		4qUBnk6MxEyeaLcsrbsjVJfLn5Y=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/TestSwiftFramework-Swift.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			zy7dTcvPshbxHGZAqF/xlIYsQHzyH6u954K7Y96xHnU=
-			</data>
-		</dict>
 		<key>Headers/TestSwiftFramework.h</key>
 		<dict>
 			<key>hash2</key>
@@ -53,20 +38,6 @@
 			zoPSCFSMmsnkeajts0s9gfuIspST7Us+NBo2EovbhLw=
 			</data>
 		</dict>
-		<key>Modules/TestSwiftFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gm9aWP5VPBsglN/KcMEEO1gP56FNhGxCl7EmwEOX9m0=
-			</data>
-		</dict>
-		<key>Modules/TestSwiftFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			khSaSsZEQRH9pM8S/RUmmgA9zo5EqsOhpsDy0nxGsak=
-			</data>
-		</dict>
 		<key>Modules/TestSwiftFramework.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
@@ -78,14 +49,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			khSaSsZEQRH9pM8S/RUmmgA9zo5EqsOhpsDy0nxGsak=
+			lPD8AzTkVf4s6jwPp+RkLdpGBcTgU3hVJdTtNCjKnes=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			APIKupr/KmfNTq9CNGtvY2ODbTwT38CL3nu+rNpFHXA=
+			lkhquAnnmuaOjGwgg9rPxAaMJYckktCM3EElQt2714M=
+			</data>
+		</dict>
+		<key>PrivateHeaders/TestObjCClass.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ojXaJdgocXJpjfV0COqrmoSVSeHETkVw+RGGrI56t34=
 			</data>
 		</dict>
 	</dict>
