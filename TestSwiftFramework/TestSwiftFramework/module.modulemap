@@ -1,5 +1,5 @@
 module TestObjCModule {
-	header "../../TestObjCLibrary/TestObjCLibrary/TestObjCClass.h"
+	header "TestObjCClass.h"
 	
 	export *
 }
