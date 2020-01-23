@@ -7,7 +7,6 @@ import UIKit
 
 // This import statement is expected to compile
 import TestSwiftFramework
-import TestSwiftFramework.TestObjCModule_Private
 
 // This import statement DOES compile, but shouldn't
 import TestObjCModule
