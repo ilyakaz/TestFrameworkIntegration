@@ -10,6 +10,7 @@
 		096DE4A923D6057600D18426 /* TestSwiftFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 096DE4A723D6057600D18426 /* TestSwiftFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		096DE4E223D6094800D18426 /* TestSwiftObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096DE4E123D6094800D18426 /* TestSwiftObject.swift */; };
 		096DE51023D63D3500D18426 /* libTestObjCLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 096DE50F23D63D3500D18426 /* libTestObjCLibrary.a */; };
+		09D35AE723D9FDBB00810A99 /* TestObjCClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D35AE623D9FDBB00810A99 /* TestObjCClass.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		096DE4E123D6094800D18426 /* TestSwiftObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftObject.swift; sourceTree = "<group>"; };
 		096DE4E423D60DBB00D18426 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		096DE50F23D63D3500D18426 /* libTestObjCLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libTestObjCLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D35AE623D9FDBB00810A99 /* TestObjCClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestObjCClass.h; path = ../../TestObjCLibrary/TestObjCLibrary/TestObjCClass.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		096DE4A623D6057600D18426 /* TestSwiftFramework */ = {
 			isa = PBXGroup;
 			children = (
+				09D35AE623D9FDBB00810A99 /* TestObjCClass.h */,
 				096DE4A723D6057600D18426 /* TestSwiftFramework.h */,
 				096DE4A823D6057600D18426 /* Info.plist */,
 				096DE4E123D6094800D18426 /* TestSwiftObject.swift */,
@@ -77,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				096DE4A923D6057600D18426 /* TestSwiftFramework.h in Headers */,
+				09D35AE723D9FDBB00810A99 /* TestObjCClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
