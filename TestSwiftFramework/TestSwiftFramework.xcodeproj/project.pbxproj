@@ -165,7 +165,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FRAMEWORK_NAME=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework\"\nFRAMEWORK_LOCATION=\"${SRCROOT}/../TestSwiftFrameworkHarness/TestSwiftFrameworkHarness\"\n\n#delete an existing framework at the target\nrm -df \"${FRAMEWORK_LOCATION}/${FRAMEWORK_NAME}\" \n# copy TestSwiftFramework.framework to the harness project\ncp -fR \"${FRAMEWORK_NAME}\" \"${FRAMEWORK_LOCATION}\"\n";
+			shellScript = "FRAMEWORK_NAME=\"${PRODUCT_NAME}.framework\"\nFRAMEWORK_SRC_NAME=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORK_NAME}\"\nFRAMEWORK_DEST_LOCATION=\"${SRCROOT}/../TestSwiftFrameworkHarness/TestSwiftFrameworkHarness\"\n\n#delete an existing framework at the target\nrm -r \"${FRAMEWORK_DEST_LOCATION}/${FRAMEWORK_NAME}\" \n# copy TestSwiftFramework.framework to the harness project\ncp -fR \"${FRAMEWORK_SRC_NAME}\" \"${FRAMEWORK_DEST_LOCATION}\"\n# hollow out contents of private headers\necho -n > \"${FRAMEWORK_DEST_LOCATION}/${FRAMEWORK_NAME}/PrivateHeaders/TestObjCClass.h\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -311,6 +311,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"BUILT_AS_FRAMEWORK=1",
+				);
 				INFOPLIST_FILE = TestSwiftFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -319,7 +324,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestSwiftFramework",
+				);
 				MODULEMAP_FILE = "$(SRCROOT)/$(SWIFT_MODULE_NAME)/$(PRODUCT_NAME:c99extidentifier).modulemap";
+				OTHER_SWIFT_FLAGS = "-D BUILT_AS_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canfield.TestSwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -341,6 +351,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = "BUILT_AS_FRAMEWORK=1";
 				INFOPLIST_FILE = TestSwiftFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -349,7 +360,12 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TestSwiftFramework",
+				);
 				MODULEMAP_FILE = "$(SRCROOT)/$(SWIFT_MODULE_NAME)/$(PRODUCT_NAME:c99extidentifier).modulemap";
+				OTHER_SWIFT_FLAGS = "-D BUILT_AS_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = com.canfield.TestSwiftFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
