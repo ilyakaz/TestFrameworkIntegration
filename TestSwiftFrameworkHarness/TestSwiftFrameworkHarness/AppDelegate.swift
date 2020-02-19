@@ -8,7 +8,7 @@ import UIKit
 // This import statement is expected to compile
 import TestSwiftFramework
 
-// This import statement DOES compile, but shouldn't
+// This import statement compiles, but internals of the module are hidden
 import TestObjCModule
 
 @UIApplicationMain
@@ -22,11 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		// This line of code is expected to compile
 		TestSwiftObject().printMessage()
 		
-		// This line of code is NOT expected to compile
-		//TestSwiftObject().printPrivateMessage()
+		// This line of code is also expected to compile
+		TestSwiftObject().printPrivateMessage()
 		
-		// This line of code DOES compile, but shouldn't
-		TestObjCClass().printTestMessage()
+		// This line of code DOES NOT compile
+		//TestObjCClass().printTestMessage()
 		return true
 	}
 
