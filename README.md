@@ -14,7 +14,7 @@ the resulting framework is copied to TestSwiftFrameworkHarness source directory.
 Builds a sample app that imports TestSwiftFramework.framework. The app must not have visibility into TestObjCLibrary.
 
 # The Problem
-__See "master" for details__
+__See "master" branch for details__
 
 Contrary to what would seem like an obvious outcome, TestSwiftFrameworkHarness app has full visibility into TestObjCLibrary. There is no
 straightforward way to make TestObjCLibrary interfaces private. This problem has been observed and documented by a large number
