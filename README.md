@@ -21,6 +21,7 @@ straightforward way to make TestObjCLibrary interfaces private. This problem has
 of users. Here are a couple of posts that I used the most in my research:
 
 <http://blog.girappe.com/?good-bad-ugly>
+
 <https://medium.com/@yuliiasynytsia/link-static-c-library-to-swift-framework-as-a-private-module-97eae2fec75e>
 
 Unfortunately, the former solution would work in theory, but would not be practical in reality. I tried to implement the latter,
